@@ -1,9 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import {
+  BrowserRouter as Router, 
+  Switch,
+  Route
+} from 'react-router-dom'
+import Layout from './components/Layout'
+import HomePage from './components/HomePage'
+import About from './components/About'
+import Contact from './components/Contact'
 
 function App() {
   return (
     <div className="App">
+      Hello world!
+    </div>
+    /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,6 +32,7 @@ function App() {
         </a>
       </header>
     </div>
+    */
   );
 }
 
