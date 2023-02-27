@@ -21,6 +21,7 @@ export default function Navbar() {
 				<CustomLink to ="/Info">Game Info</CustomLink>
 				<CustomLink to ="/Leaderboard">Leaderboard</CustomLink>
 				<CustomLink to ="/Contact">Contact Us</CustomLink>
+				<CustomLink to ="/Login" className="mobile-only">Login</CustomLink>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
