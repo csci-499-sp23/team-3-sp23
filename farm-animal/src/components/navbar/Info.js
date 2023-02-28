@@ -3,7 +3,7 @@ import '../../styles/Info.css';
 
 const Info = () => {
   return (
-    <div className='info'> 
+    <div className='game-info-container'> 
       <p>
         Animal Mafia is a free turn based game set in your
         own farm. Users would be given the chance to 
