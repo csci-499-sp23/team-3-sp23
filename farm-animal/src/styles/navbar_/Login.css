@@ -1,0 +1,29 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    background-color: #fff1f0;
+    height: 100vh;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 2px 2px;
+    background-color: white;
+    padding-top:4rem;
+    height: 30rem;
+    width: 15%;
+}
+.login-input {
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+}
+.login-link {
+    padding-right: 20px;
+}
