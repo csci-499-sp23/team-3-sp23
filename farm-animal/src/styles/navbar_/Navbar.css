@@ -38,7 +38,7 @@ nav a {
 }
 
 nav li.active {
-	/* background-color: var(--dark); */
+	background-color: var(--dark);
 	border-radius: 20px;
 }
 
