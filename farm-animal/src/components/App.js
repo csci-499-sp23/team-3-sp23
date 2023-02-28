@@ -2,7 +2,7 @@ import "../styles/App.css"
 import Navbar from "./navbar/Navbar";
 import Info from "./navbar/Info";
 import Contact from "./navbar/Contact";
-import Leaderboard from "./navbar/Leaderboard";
+import Board from "./navbar/Leaderboard";
 import Login from "./navbar/Login";
 import Register from "./navbar/Register";
 import { Route, Routes } from "react-router-dom";
@@ -16,8 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/info"element={<Info />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
+            path="/info" element={<Info />} />
+          <Route path="/leaderboard" element={<Board />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
