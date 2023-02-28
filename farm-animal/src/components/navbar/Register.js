@@ -6,10 +6,10 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const user = axios.post('/api/register', { name, email, password})
+      const user = await axios.post('backend/routes/addUser.js/register', { name, email, password})
       console.log("Sucessful!")
     } catch (error) {
       console.log("Error");

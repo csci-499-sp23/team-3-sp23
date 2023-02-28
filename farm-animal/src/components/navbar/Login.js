@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const user = axios.post('/api/register', { email, password})
+      const user = await axios.post('backend/routes/loginAuthorization.js/login', { email, password})
       console.log("Sucessful!")
     } catch (error) {
       console.log("Error");
@@ -22,7 +22,7 @@ const Login = () => {
         <input type = "password" placeholder='Players Password' id = "password" name= "passowrd" value={password} onChange={(e) => setPassword(e.target.value)}/>
         <button type = "submit">Login Now!</button>
       </form>
-      <Link to = "/Register" className='test'>Play</Link>
+      <Link to = "/Register" className='test'>Register Here!</Link>
     </div>
   )
 }
