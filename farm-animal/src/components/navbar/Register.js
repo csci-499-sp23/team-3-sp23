@@ -11,11 +11,12 @@ const Register = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     try {
-      const user = await axios.post('backend/routes/addUser.js/register', { name, email, password})
+      const user = axios.post('backend/routes/addUser.js/register', { username, email, pass})
       console.log("Sucessful!")
     } catch (error) {
       console.log("Error");
     }
+    
   }
 
   return (
