@@ -1,8 +1,9 @@
 import React from 'react'
+import Board from '../leaderboard/Leaderboard'
 
 const Leaderboard = () => {
   return (
-    <div>Leaderboard</div>
+    <Board></Board>
   )
 }
 
