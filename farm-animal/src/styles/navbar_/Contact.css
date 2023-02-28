@@ -1,5 +1,5 @@
 /* Adjust CSS to make it work for all resoultion  */
-.login-container {
+.contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +7,7 @@
     background-color: #fff1f0;
     height: 100vh;
 }
-.login-form {
+.contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,15 +16,26 @@
     border-width: 1px;
     box-shadow: 2px 2px;
     background-color: white;
-    padding-top:4rem;
-    height: 30rem;
-    width: 15%;
+    padding-top:2rem;
+    height: 40rem;
+    width: 25%;
 }
-.login-input {
+.contact-label {
+    font-size: 18px;
+}
+.contact-input {
     border-style: solid;
     border-radius: 10px;
     border-width: 1px;
+    width:80%;
 }
-.login-link {
-    padding-right: 20px;
+.contact-text {
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 1px;
+    width: 500px;
+    max-height: 500px;
+    min-height: 200px;
+    resize: none;
 }
