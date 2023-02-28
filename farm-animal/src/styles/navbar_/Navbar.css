@@ -38,7 +38,7 @@ nav a {
 }
 
 nav li.active {
-	/* background-color: var(--dark); */
+	background-color: var(--dark);
 	border-radius: 20px;
 }
 
@@ -85,8 +85,18 @@ nav {
 	align-items: center;
 }
 
+.mobile-only{
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+}
 
 @media only screen and (max-width: 1024px) {
+	.mobile-only{
+		opacity: 1;
+		visibility: visible;
+		display: flex;
+	}
     .lft-btn{
         opacity: 0;
         visibility: hidden;

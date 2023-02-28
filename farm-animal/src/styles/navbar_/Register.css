@@ -1,0 +1,66 @@
+
+@import url("https://fonts.google.com/share?selection.family=Bungee%20Inline%7COpen%20Sans");
+/* To match pitch board: red color and retro font
+.register-header, .link-button, .register-button{
+    font-family: 'Bungee Inline';
+    color:rgb(181,32,43);
+} */
+
+.register-container{
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.register-container,.register-form{
+    
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 20px;
+    min-height: 100vh;
+  
+    /* background-image: ; */
+}
+.register-form{
+    border-radius: 5px;
+    background-color: #fff1f0;
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+}
+.register-header{
+    margin: 0.5rem 0;
+}
+
+.register-background{
+    height:100%;
+    background-size: cover;
+}
+
+label{
+    display: flex;
+    text-align: left;
+    padding:0.25rem 0;
+}
+
+input{
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+}
+
+button{
+    border:none;
+    margin: 0.5rem 0;
+    align-items: left;
+    background-color: rgb(237,224,211);
+    color:black;
+    padding:20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+}
+.link-button{
+    background-color: none;
+
+}
