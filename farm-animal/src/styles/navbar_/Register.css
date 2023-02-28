@@ -1,0 +1,38 @@
+
+.register-container,.register-form{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 20px;
+    min-height: 100vh;
+  
+    /* background-image: ; */
+}
+
+label{
+    text-align: left;
+    padding:0.25rem 0;
+
+}
+
+input{
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+}
+
+button{
+    border:none;
+    align-items: left;
+    background-color: beige;
+    color:black;
+    padding:20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.link-button{
+    background-color: none;
+    color: black;
+    text-decoration: underline;
+
+}
