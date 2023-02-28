@@ -17,7 +17,7 @@ const Register = () => {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor='name'>Full Name: </label>
+      <label htmlFor='name'>Username: </label>
       <input type = "name" placeholder='Players Name' id = "name" value = {name} onChange={(e) => setName(e.target.value)} />
       <label htmlFor = "email">Email: </label>
       <input type = "email" placeholder='Players Email' id = "email" value={email} onChange={(e) => setEmail(e.target.value)} />
