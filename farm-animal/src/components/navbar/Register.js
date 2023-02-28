@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import "../../styles/navbar_/Register.css";
-import { Route, Routes } from "react-router-dom";
+import axios from 'axios';
 
 
 const Register = (props) => {
@@ -10,8 +10,14 @@ const Register = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email);
+    try {
+      const user = await axios.post('backend/routes/addUser.js/register', { name, email, password})
+      console.log("Sucessful!")
+    } catch (error) {
+      console.log("Error");
+    }
   }
+
   return (
   
     <div className="register-container">
