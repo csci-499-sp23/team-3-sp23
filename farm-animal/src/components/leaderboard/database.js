@@ -64,3 +64,4 @@ export const scores = [
   }
 
 ]
+//Move to backend later on
