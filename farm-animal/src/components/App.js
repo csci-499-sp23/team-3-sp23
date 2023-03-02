@@ -10,9 +10,8 @@ import Home from "./navbar/Home";
 import { initializeApp } from "firebase/app"
 import { firebaseConfig } from "./firebase.js"
 
-initializeApp(firebaseConfig);
-
 function App() {
+  initializeApp(firebaseConfig);
   return (
     <div className="App">
       <Navbar />
