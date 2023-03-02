@@ -3,14 +3,14 @@ export const scores = [
     name: "appleTurkey",
     location: "USA",
     score: 4770,
-    img: "/src/farm-animal/assets/turkey.png",
+    img: "./turkey.png",
     dt: "2022-02-10"
   },
   {
     name: "wheatBread",
     location: "Poland",
     score: 2009,
-    img: "./assets/bread.png",
+    img: "../../assets/bread.png",
     dt: "2021-01-01"
   },
   {
@@ -64,3 +64,4 @@ export const scores = [
   }
 
 ]
+//Move to backend later on

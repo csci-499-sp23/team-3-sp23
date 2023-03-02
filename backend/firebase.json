@@ -5,12 +5,9 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "../animal-farm/src/index.js"
-      }
     ]
+  },
+  "database": {
+    "rules": "database.rules.json"
   }
 }

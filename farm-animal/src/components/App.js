@@ -7,6 +7,10 @@ import Login from "./navbar/Login";
 import Register from "./navbar/Register";
 import { Route, Routes } from "react-router-dom";
 import Home from "./navbar/Home";
+import { initializeApp } from "firebase/app"
+import { firebaseConfig } from "./firebase.js"
+
+initializeApp(firebaseConfig);
 
 function App() {
   return (
