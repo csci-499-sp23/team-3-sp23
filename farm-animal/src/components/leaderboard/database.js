@@ -3,7 +3,7 @@ export const scores = [
     name: "appleTurkey",
     location: "USA",
     score: 4770,
-    img: "../assets/turkey.png",
+    img: "../../assets/turkey.png",
     dt: "2022-02-10"
   },
   {
