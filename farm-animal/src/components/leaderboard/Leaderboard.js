@@ -1,6 +1,7 @@
 import { scores } from './database';
 import Profiles from './profile';
 import React, { useState } from 'react'
+import './Leaderboard.css'
 
 export default function Board() {
 
