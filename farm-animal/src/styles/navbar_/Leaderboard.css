@@ -1,0 +1,57 @@
+.board {
+  text-align: center;
+  margin: 20%;
+}
+
+.board .leaderboard {
+  margin-bottom: 1em;
+}
+
+.board .duration {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 20%;
+}
+
+/* .container {
+  margin: 20%;
+} /
+
+#profile {
+  / display: flex; /
+
+  margin-top: 3em;
+}
+
+#profile .flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+#profile .flex .item {
+  display: flex;
+  align-items: center;
+}
+
+#profile .flex img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+#profile .flex .info {
+  padding: 1em;
+}
+
+.text-dark {
+  color: var(--color-dark);
+}
+
+#profile {
+  / display: flex; */
+
+  margin-top: 3em;
+}
