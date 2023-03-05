@@ -2,6 +2,9 @@
     box-sizing: inherit;
 }
 
+h1{
+    text-align: center;
+}
 h2 {
     text-align: center;
 }
@@ -51,10 +54,6 @@ p {
     margin-right: 25%;
 }
 
-.meet-team-css{
-    text-align: center;
-    color: black;
-}
 
 .row{
     display: flex;
