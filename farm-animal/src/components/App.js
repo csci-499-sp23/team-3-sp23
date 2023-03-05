@@ -7,13 +7,17 @@ import Login from "./navbar/Login";
 import Register from "./navbar/Register";
 import { Route, Routes } from "react-router-dom";
 import Home from "./navbar/Home";
-// import { initializeApp } from "firebase/app"
-// import { firebaseConfig } from "./firebase.js"
+//import firebase.js
+// import firebase from "./firebase"
 
 function App() {
-  // initializeApp(firebaseConfig);
+  //for testing firebase 
+  // const firebaseApp= firebase.apps[0];
   return (
     <div className="App">
+      {/* {
+        JSON.stringify(firebaseApp)
+      } */}
       <Navbar />
       <div className="container">
         <Routes>
