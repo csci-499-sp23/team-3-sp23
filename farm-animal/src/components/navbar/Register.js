@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import "../../styles/navbar_/Register.css";
-import background from '../../assets/Register-background.gif'
-import RegBg from "../RegBg";
+import RegBg from "../navbar/RegBg";
 import axios from 'axios';
 import { Link } from "react-router-dom"
 
