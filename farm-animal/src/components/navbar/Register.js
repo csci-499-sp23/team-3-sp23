@@ -1,24 +1,28 @@
 import React, {useState} from 'react'
 import "../../styles/navbar_/Register.css";
-import RegBg from "../navbar/RegBg";
-import axios from 'axios';
 import { Link } from "react-router-dom"
+import { firestore } from "../firebase"
+import { addDoc,collection } from "@firebase/firestore"
 
 
-const Register = (props) => {
+const Register = () => {
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
   const [username, setUsername] = useState('');
-
+  const ref = collection(firestore, "test");
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const user = await axios.post('backend/routes/addUser.js/register', { username, email, pass})
-      console.log("Sucessful!")
-    } catch (error) {
-      console.log("Error");
+    let data = {
+      email: email,
+      password: pass,
+      user: username
     }
-    
+    try {
+      addDoc(ref, data);
+    } 
+    catch(e){
+      console.log(e);
+    }
   }
 //style={{ backgroundImage:`url(${background})` }
   return (
@@ -36,7 +40,6 @@ const Register = (props) => {
         <button className="link-button" >Login</button>
         </Link>
       </form>
-      <RegBg />
     </div>
   )
 }
