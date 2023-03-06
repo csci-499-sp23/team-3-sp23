@@ -1,9 +1,9 @@
-.background{
+.home-bg{
     background-color: black;
     text-align: center;
     padding: 20px;
 }
-.App-logo{
+.home-logo{
     height: 60%;
     width: 60%;
     overflow: hidden;

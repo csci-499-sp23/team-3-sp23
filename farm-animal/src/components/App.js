@@ -19,7 +19,7 @@ function App() {
         JSON.stringify(firebaseApp)
       } */}
       <Navbar />
-      <div className="container">
+      <div className="app-container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route

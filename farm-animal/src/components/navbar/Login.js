@@ -17,17 +17,17 @@ const Login = () => {
   return (
     <div className='login-container'>
       <form className = 'login-form' onSubmit={handleSubmit}>
-        <h2>Account Login</h2>
-        <label htmlFor = "email">Email: </label>
+        <h2 className="login-header">Account Login</h2>
+        <label htmlFor = "email" className= 'login-label'>Email: </label>
         <input className = "login-input" type = "email" placeholder='Players Email' id = "email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <label htmlFor = "password"> Password:</label>
+        <label htmlFor = "password" className= 'login-label'> Password:</label>
         <input className = "login-input" type = "password" placeholder='Players Password' id = "password" name= "passowrd" value={password} onChange={(e) => setPassword(e.target.value)}/>
         <div >
           <Link to = "/forgetUser" className='login-link'>Forget User</Link>
-          <Link to = "/forgetPassword">Forget Password</Link>
+          <Link to = "/forgetPassword" className='login-link'>Forget Password</Link>
         </div>
-        <button type = "submit">Login Now!</button>
-        <Link to = "/Register">Register Here!</Link>
+        <button type = "submit" className="login-button">Login Now!</button>
+        <Link to = "/Register" className='login-link'>Register Here!</Link>
       </form>
     </div>
   )
