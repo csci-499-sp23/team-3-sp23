@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../assets/HomeImage.gif'
-import '../styles/HomeBg.css';
+import logo from '../../assets/HomeImage.gif'
+import '../../styles/navbar_/HomeBg.css';
 
 const HomeBg = () => {
   return (

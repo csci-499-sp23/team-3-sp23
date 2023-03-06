@@ -1,6 +1,5 @@
 import React from 'react'
-import animals from '../assets/Register-background.gif'
-import '../styles/HomeBg.css';
+import animals from '../../assets/Register-background.gif'
 
 const RegBg = () => {
   return (
