@@ -1,11 +1,11 @@
 import React from 'react'
-import Background from "../Background";
+import HomeBg from "../HomeBg";
 import '../../styles/navbar_/Home.css';
 
 const Home = () => {
   return (
     <div className='home-container'>
-      <Background />
+      <HomeBg />
     </div>
   )
 }
