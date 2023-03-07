@@ -5,35 +5,35 @@
 h1{
     text-align: center;
 }
+
 h2 {
     text-align: center;
 }
 
 p {
+    text-align: justify;
     font-size: x-large;
 }
 
 .about-section{
     padding: 50px;
     text-align: center;
-    background-color: #d784e2;
+    background-color: var(--primary);
     color:black;
 }
 
 .column{
     float: left;
-    width: 33.3;
-    margin-bottom: 16px;
+    /* width: 100%; */
+    margin-bottom: 2%;
+    margin-top: 2%;
     padding: 0 8px;
 }
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 10%;
-}
-
-.container{
-    padding: 0 16px;
+    flex-wrap: wrap;
 }
 
 .container::after, .row::after{
@@ -47,6 +47,7 @@ p {
 .entire-page{
     background-color: #fff1f0;
     height: 100vh;
+    padding: 5%;
 }
 
 .info-about{
@@ -62,12 +63,22 @@ p {
     justify-content: center;
 }
 
-
-
-.title{
-    color: grey;
+.meet-the-team{
+    padding-top: 2%;
 }
 
+.card-title{
+    color: grey;
+    text-align: center;
+}
+
+.card-body{
+    text-align: left;
+}
+
+.card-email{
+    text-align: left;
+}
 @media screen and (max-width: 650px) {
     .column {
       width: 100%;
