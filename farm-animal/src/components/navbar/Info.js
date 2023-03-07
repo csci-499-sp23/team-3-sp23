@@ -33,11 +33,17 @@ const Info = () => {
               <br></br>
 
               <p className='card-body'>
-                Shermol helps out sometimes
+                Working on Info Page
               </p>
+
+              <br></br>
+
               <p className='card-email'>
-                shermolpeters@gmail.com
+                SP@gmail.com
               </p>
+
+              <br></br>
+
             </div>  
           </div>
         </div>
@@ -57,11 +63,17 @@ const Info = () => {
               <br></br>
 
               <p className='card-body'>
-                Chloe helps out sometimes
+              Working on Shanky HW
               </p>
+
+              <br></br>
+
               <p className='card-email'>
-                ChloeAlrbright@gmail.com
+              CB@gmail.com
               </p>
+
+              <br></br>
+
             </div>  
           </div>
         </div>
@@ -81,11 +93,17 @@ const Info = () => {
               <br></br>
 
               <p className='card-body'>
-                Annie helps out sometimes
+              Working on Home Page
               </p>
+
+              <br></br>
+
               <p className='card-email'>
-                AnnieMai@gmail.com
+                AM@gmail.com
               </p>
+
+              <br></br>
+
             </div>  
           </div>
         </div>
@@ -99,17 +117,23 @@ const Info = () => {
               <br></br>
 
               <p className='card-title'>
-                Nightowl aka the sourpatch kid
+                Sour Patch Kid
               </p>
 
               <br></br>
 
               <p className='card-body'>
-                Daniel helps out sometimes
+              Working on Backend
               </p>
+
+              <br></br>
+
               <p className='card-email'>
-                DanielLastName@gmail.com
+                DL@gmail.com
               </p>
+
+              <br></br>
+
             </div>  
           </div>
         </div>
@@ -129,11 +153,17 @@ const Info = () => {
               <br></br>
 
               <p className='card-body'>
-                Liza helps out sometimes
+              Working on Leaderboard
               </p>
+
+              <br></br>
+
               <p className='card-email'>
-                LizaLastName@gmail.com
+                Liza@gmail.com
               </p>
+              
+              <br></br>
+
             </div>  
           </div>
         </div>
