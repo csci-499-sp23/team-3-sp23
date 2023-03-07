@@ -18,14 +18,20 @@ const Info = () => {
 
       <h1 className='meet-the-team'>Meet the Team</h1>
 
-      <div className='row'>
-        <div className="column">
-          <div className='card'>
-            <div className='container'>
+      <div className='info-row'>
+        <div className="info-column">
+          <div className='info-card'>
+            <div className='info-container'>
               <h2>Shermol</h2>
+
+              <br></br>
+
               <p className='card-title'>
                 Useless Team Member
               </p>
+
+              <br></br>
+
               <p className='card-body'>
                 Shermol helps out sometimes
               </p>
@@ -36,14 +42,20 @@ const Info = () => {
           </div>
         </div>
 
-        <div className="column">
-          <div className='card'>
+        <div className="info-column">
+          <div className='info-card'>
             {/* <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> */}
-            <div className='container'>
+            <div className='info-container'>
               <h2>Chloe</h2>
+
+              <br></br>
+
               <p className='card-title'>
                 Da Project Owner
               </p>
+
+              <br></br>
+
               <p className='card-body'>
                 Chloe helps out sometimes
               </p>
@@ -54,14 +66,20 @@ const Info = () => {
           </div>
         </div>
 
-        <div className="column">
-          <div className='card'>
+        <div className="info-column">
+          <div className='info-card'>
             {/* <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> */}
-            <div className='container'>
+            <div className='info-container'>
               <h2>Annie</h2>
+
+              <br></br>
+
               <p className='card-title'>
                 *insert frog noise*
               </p>
+
+              <br></br>
+
               <p className='card-body'>
                 Annie helps out sometimes
               </p>
@@ -72,14 +90,20 @@ const Info = () => {
           </div>
         </div>
 
-        <div className="column">
-          <div className='card'>
+        <div className="info-column">
+          <div className='info-card'>
             {/* <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> */}
-            <div className='container'>
+            <div className='info-container'>
               <h2>Daniel</h2>
+
+              <br></br>
+
               <p className='card-title'>
                 Nightowl aka the sourpatch kid
               </p>
+
+              <br></br>
+
               <p className='card-body'>
                 Daniel helps out sometimes
               </p>
@@ -90,14 +114,20 @@ const Info = () => {
           </div>
         </div>
 
-        <div className="column">
-          <div className='card'>
+        <div className="info-column">
+          <div className='info-card'>
             {/* <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> */}
-            <div className='container'>
+            <div className='info-container'>
               <h2>Liza</h2>
+
+              <br></br>
+
               <p className='card-title'>
                 Team Ace
               </p>
+
+              <br></br>
+
               <p className='card-body'>
                 Liza helps out sometimes
               </p>
