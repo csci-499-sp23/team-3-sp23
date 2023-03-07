@@ -7,6 +7,8 @@ import Login from "./navbar/Login";
 import Register from "./navbar/Register";
 import { Route, Routes } from "react-router-dom";
 import Home from "./navbar/Home";
+import Welcome from "./gameplay/Welcome";
+
 //import firebase.js
 // import firebase from "./firebase"
 
@@ -28,6 +30,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/welcome" element={<Welcome />} />
         </Routes>
       </div>
     </div>
