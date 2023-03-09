@@ -8,7 +8,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const user = await axios.post('backend/routes/loginAuthorization.js/login', { email, password})
+      const user = await axios.post('backend/routes/loginAuthorization.js/login', { email, password })
       console.log("Sucessful!")
     } catch (error) {
       console.log("Error");
@@ -16,21 +16,21 @@ const Login = () => {
   }
   return (
     <div className='login-container'>
-      <form className = 'login-form' onSubmit={handleSubmit}>
+      <form className='login-form' onSubmit={handleSubmit}>
         <h2 className="login-header">Account Login</h2>
-        <label htmlFor = "email" className= 'login-label'>Email: </label>
-        <input className = "login-input" type = "email" placeholder='Players Email' id = "email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <label htmlFor = "password" className= 'login-label'> Password:</label>
-        <input className = "login-input" type = "password" placeholder='Players Password' id = "password" name= "passowrd" value={password} onChange={(e) => setPassword(e.target.value)}/>
+        <label htmlFor="email" className='login-label'>Email: </label>
+        <input className="login-input" type="email" placeholder='Players Email' id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <label htmlFor="password" className='login-label'> Password:</label>
+        <input className="login-input" type="password" placeholder='Players Password' id="password" name="passowrd" value={password} onChange={(e) => setPassword(e.target.value)} />
         <div >
-          <Link to = "/forgetUser" className='login-link'>Forget User</Link>
-          <Link to = "/forgetPassword" className='login-link'>Forget Password</Link>
+          <Link to="/ForgotU" className='login-link'>Forget User</Link>
+          <Link to="/ForgotP" className='login-link'>Forget Password</Link>
         </div>
-        <button type = "submit" className="login-button">Login Now!</button>
-        <Link to = "/Register" className='login-link'>Register Here!</Link>
+        <button type="submit" className="login-button">Login Now!</button>
+        <Link to="/Register" className='login-link'>Register Here!</Link>
       </form>
     </div>
   )
 }
 
-export default Login
+export default Login;
