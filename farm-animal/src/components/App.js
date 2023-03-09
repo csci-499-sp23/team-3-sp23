@@ -5,6 +5,8 @@ import Contact from "./navbar/Contact";
 import Board from "./navbar/Leaderboard";
 import Login from "./navbar/Login";
 import Register from "./navbar/Register";
+import ForgotP from "./navbar/ForgotP";
+import ForgotU from "./navbar/ForgotU";
 import { Route, Routes } from "react-router-dom";
 import Home from "./navbar/Home";
 import Welcome from "./gameplay/Welcome";
@@ -31,6 +33,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/welcome" element={<Welcome />} />
+          {/* create a route tag in order to use it in the "to" in Link*/}
+          <Route path="/ForgotP" element={<ForgotP />} />
+          <Route path="/ForgotU" element={<ForgotU />} />
         </Routes>
       </div>
     </div>
