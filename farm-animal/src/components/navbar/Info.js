@@ -21,6 +21,9 @@ const Info = () => {
       <div className='info-row'>
         <div className="info-column">
           <div className='info-card'>
+
+            {/* <img src={require('/src/assets/app-info/App_Info.jpg')}/> */}
+
             <div className='info-container'>
               <h2>Shermol</h2>
 
@@ -43,7 +46,7 @@ const Info = () => {
               </p>
 
               <br></br>
-
+              {/* sherrmol comment */}
             </div>  
           </div>
         </div>
