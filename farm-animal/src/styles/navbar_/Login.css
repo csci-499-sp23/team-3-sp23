@@ -1,30 +1,67 @@
 /* Adjust CSS to make it work for all resoultion  */
 .login-container {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
-    padding-top: 10%;
-    background-color: #fff1f0;
-    height: 100vh;
 }
 .login-form {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 1px;
-    box-shadow: 2px 2px;
-    background-color: white;
-    padding-top:4rem;
-    height: 30rem;
-    width: 15%;
+    border-radius: 5px;
+    background-color: var(--secondary);
+    margin: 5rem 8rem 5rem 8rem;
+    padding: 3%;
+    box-shadow: 0 0 25px var(--darker);
 }
 .login-input {
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 1px;
+    margin: 0.5rem 0;
+    padding: 1rem 15vh 1rem 1rem;
+    border: none;
+    color: #77402f;
+    border-radius: 20px;
 }
+
+.login-input:focus{
+    border: 2px solid var(--primary);
+    outline: none;
+}
+
 .login-link {
-    padding-right: 20px;
+    background-color: none;
+    border:none;
+    margin: 0.5rem 0;
+    align-items: center;
+    background-color: hsl(120, 100%, 50%, 0);
+    color:#cc5f57;
+    cursor: pointer;
+    font-size: medium;
+    padding: 10px;
+}
+
+.login-header{
+    font-size: 25px;
+    color: #77402f;
+    margin: 0.5rem 0;
+}
+
+.login-label{
+    padding:0.25rem 0;
+    margin: 0.5rem;
+    font-weight: 800;
+    color: #77402f;
+}
+
+.login-button{
+    background-color: none;
+    border:none;
+    margin: 0.5rem 0;
+    align-items: left;
+    background-color: var(--darker);
+    color:var(--light);
+    padding:20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    font-size: medium;
 }

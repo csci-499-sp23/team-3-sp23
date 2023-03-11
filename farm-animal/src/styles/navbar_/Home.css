@@ -1,0 +1,28 @@
+.home-container{
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+}
+.play-btn{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    z-index: 5;
+}
+
+
+.wel-button{
+    padding: 3vh 10vh 3vh 10vh;
+    background-color:rgb(255, 218, 115);
+    border: none;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgb(255, 250, 180);
+    color: white;
+    cursor: pointer;
+}
+
+.wel-button:hover{
+    background-color:rgb(253, 229, 164);
+}
