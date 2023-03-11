@@ -91,3 +91,31 @@ p {
       display: block;
     }
   }
+
+.info-game-detail-section{
+    display:flex;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.info-how-to-play{
+    width: 50%;
+    float: left;
+}
+
+.info-about-mafia{
+    width: 50%;
+    float: right;
+}
+
+.info-GDS-colomn{
+    padding: 2%;
+}
+
+.info-GDS-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2%;
+    background-color: #fec89a;
+
+    text-align: justify;
+}

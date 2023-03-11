@@ -16,6 +16,58 @@ const Info = () => {
         </p>
       </div>
 
+      <div className='info-game-detail-section'>
+        <div className='info-how-to-play'> {/*HTW = how to play */}
+          <div className='info-GDS-colomn'>
+            <div className='info-GDS-card'>
+              this is the how to play section
+            </div>
+
+          </div>
+  
+        </div>
+
+        <div className='info-about-mafia'> {/*AM = about mafia */}
+          <div className='info-GDS-colomn'>
+            <div className='info-GDS-card'>
+              <b>Don</b> : The Offical Boss and First position of power in the family. His word is law and nothing ever gets
+              past him without knowledge of it.
+
+              <br></br> <br></br>
+
+              <b>Underboss</b> : Second in positon in power of crime family heirarchy and the most likely next in line to become 
+              the Don in the event the present Don retires, becomes incarcerated, become sick or is killed.
+
+              <br></br> <br></br>
+
+
+              <b>Consigliere</b> : He is the Don's right hand man, advisor, coordinator and even legal counsel to him and the crime family.
+
+              <br></br> <br></br>
+
+
+              <b>Caporegime</b> :He is the third postion of power in the crime heirarchy fam
+
+              <br></br> <br></br>
+
+
+              <b>Soldier</b> :
+
+              <br></br> <br></br>
+
+
+              <b>Associate</b> :
+
+              <br></br> <br></br>
+
+            </div>
+
+          </div>
+          
+        </div>
+        
+      </div>
+
       <h1 className='meet-the-team'>Meet the Team</h1>
 
       <div className='info-row'>
