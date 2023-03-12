@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import axios from 'axios';
 import "../../styles/navbar_/Login.css";
 import { Link } from "react-router-dom"
 const Login = () => {
@@ -8,7 +7,6 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const user = await axios.post('backend/routes/loginAuthorization.js/login', { email, password })
       console.log("Sucessful!")
     } catch (error) {
       console.log("Error");
