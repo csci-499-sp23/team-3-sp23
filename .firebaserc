@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "animal-mafia-c004b"
-  }
+    "default": "animal-mafia-c004b",
+    "animal-mafia-c004b": "animal-mafia-c004b"
+  },
+  "targets": {},
+  "etags": {}
 }
