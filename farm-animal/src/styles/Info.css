@@ -20,6 +20,7 @@ p {
     text-align: center;
     background-color: var(--primary);
     color:black;
+    border-radius: 25px;
 }
 
 .info-column{
@@ -33,7 +34,8 @@ p {
 .info-card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 2%;
-    background-color: #fec89a;;
+    background-color: #fec89a;
+    border-radius: 25px;
 }
 
 .info-container::after, .row::after{
@@ -50,7 +52,7 @@ p {
 
 .entire-page{
     background-color: #fff1f0;
-    height: 100vh;
+    height: 100%;
     padding: 5%;
 }
 
@@ -79,11 +81,11 @@ p {
 }
 
 .card-body{
-    text-align: left;
+    text-align: center;
 }
 
 .card-email{
-    text-align: left;
+    text-align: center;
 }
 @media screen and (max-width: 650px) {
     .column {
@@ -99,23 +101,31 @@ p {
 }
 
 .info-how-to-play{
-    width: 50%;
+    width: 40%;
     float: left;
 }
 
 .info-about-mafia{
-    width: 50%;
+    width: 60%;
     float: right;
 }
 
 .info-GDS-colomn{
     padding: 2%;
+    font-size: x-large;
 }
 
 .info-GDS-card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 2%;
     background-color: #fec89a;
-
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 25px;
     text-align: justify;
+}
+
+.info-GDS-header{
+    text-align: center;
+    padding-top: 1%;
 }

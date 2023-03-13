@@ -20,7 +20,14 @@ const Info = () => {
         <div className='info-how-to-play'> {/*HTW = how to play */}
           <div className='info-GDS-colomn'>
             <div className='info-GDS-card'>
-              this is the how to play section
+              <h1 className='info-GDS-header'>How to Play</h1>
+              
+              <b>Click</b> on your desired square to move. Each square moved will account for one turn spent.
+
+              <br></br> <br></br>
+
+              <b>Interact</b> with hostile enemies and chest by approachinh the object and clciking them.
+              
             </div>
 
           </div>
@@ -30,6 +37,8 @@ const Info = () => {
         <div className='info-about-mafia'> {/*AM = about mafia */}
           <div className='info-GDS-colomn'>
             <div className='info-GDS-card'>
+              <h1 className='info-GDS-header'>Mafia Ranks</h1>
+
               <b>Don</b> : The Offical Boss and First position of power in the family. His word is law and nothing ever gets
               past him without knowledge of it.
 
@@ -46,17 +55,18 @@ const Info = () => {
               <br></br> <br></br>
 
 
-              <b>Caporegime</b> :He is the third postion of power in the crime heirarchy fam
+              <b>Caporegime</b> :He is the third postion of power in the crime heirarchy family and he or she leads a crew of around 3 to 4 members.
+              The capos are the ones who vote for whos Don.
 
               <br></br> <br></br>
 
 
-              <b>Soldier</b> :
+              <b>Soldier</b> : The lowest official rank, these members are usually assigned into crews.
 
               <br></br> <br></br>
 
 
-              <b>Associate</b> :
+              <b>Associate</b> : Non-official members but they are indirectly associated with the Mafia. 
 
               <br></br> <br></br>
 
