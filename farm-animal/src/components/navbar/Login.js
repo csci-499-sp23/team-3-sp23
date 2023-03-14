@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "../../styles/navbar_/Login.css";
 import { Link } from "react-router-dom"
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { response } from 'express';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -11,6 +12,8 @@ const Login = () => {
       const auth = getAuth();
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
+          <Link to = "../gameplay/Welcome"/>
+          sessionStorage.setItem("Token", userCredential._tokenResponse.refreshToken);
           const user = userCredential.user
         })
     } catch (error) {

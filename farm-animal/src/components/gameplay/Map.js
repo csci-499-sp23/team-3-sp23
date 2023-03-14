@@ -14,7 +14,8 @@ function Map() {
     }
     const mapCreate = () => 
     {
-
+        const map = mapSize(1,size);
+        const 
     }
   return (
     <div className='message'>Welcome to the game LADILADIDAH</div>
