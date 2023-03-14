@@ -14,7 +14,7 @@ export default function Navbar() {
 	};
 
 	return (
-		<header>
+		<header className="nav-container">
 			<div className = "logo">
 			<Link to="/"><img className="chicken-logo" src={ChickenLogo} alt="ChickenLogo" /></Link>
 			</div>

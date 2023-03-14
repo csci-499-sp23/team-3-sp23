@@ -11,7 +11,7 @@ const Home = () => {
       <div className='play-btn'>
         <Link to = "/welcome" className='welcome'>
           <button type="button" className='wel-button'>
-            P l a y
+            Play
           </button> 
         </Link>
       </div>
