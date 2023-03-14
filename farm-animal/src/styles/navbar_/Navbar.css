@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
+
+.chicken-logo{
+	width: auto;
+	height: auto;
+	max-width: 70px;
+	max-height: 70px;
+}
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -21,7 +30,7 @@ header {
 
 .logo{
 	text-decoration: none;
-	padding: 20px;
+	/* padding: 20px; */
 }
 
 .logo a{
