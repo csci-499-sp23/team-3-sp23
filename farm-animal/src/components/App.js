@@ -1,6 +1,6 @@
 import "../styles/App.css"
 import Navbar from "./navbar/Navbar";
-import Info from "./navbar/Info";
+import Info from "./navbar/info/Info";
 import Contact from "./navbar/Contact";
 import Board from "./navbar/Leaderboard";
 import Login from "./navbar/Login";
