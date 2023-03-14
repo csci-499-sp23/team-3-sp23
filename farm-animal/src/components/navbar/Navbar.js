@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../../styles/navbar_/Navbar.css";
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import ChickenLogo from "../../assets/chickenv2.svg"
 
 export default function Navbar() {
   //it will refer to nav tag
@@ -15,7 +16,7 @@ export default function Navbar() {
 	return (
 		<header>
 			<div className = "logo">
-			<Link to="/">Animal Mafia</Link>
+			<Link to="/"><img className="chicken-logo" src={ChickenLogo} alt="ChickenLogo" /></Link>
 			</div>
 			<nav ref={navRef}>
 				<CustomLink to ="/Info">Game Info</CustomLink>
