@@ -21,12 +21,14 @@ const Register = () => {
       addDoc(ref, data);
     } 
     catch(e){
+      console.log("catch error register") //Chloe Pull Request
       console.log(e);
     }
   }
+
 //style={{ backgroundImage:`url(${background})` }
   return (
-    <div className="register-container">
+    <div className="register-container" >
       <form className="register-form"onSubmit={handleSubmit}>
         <h2 className="register-header"> Register Now </h2>
         <label htmlFor="username" className= 'reg-label'>Username</label>
