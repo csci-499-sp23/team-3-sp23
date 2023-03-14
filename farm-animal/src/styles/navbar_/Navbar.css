@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
+.logo{
+	padding: 1%;
+}
+.chicken-logo{
+	width: auto;
+	height: auto;
+	max-width: 80px;
+	max-height: 80px;
+}
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -13,7 +24,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 80px;
+	height: 90px;
 	padding: 0 2rem;
 	background-color: var(--primary);
 	color: var(--light);
@@ -21,7 +32,7 @@ header {
 
 .logo{
 	text-decoration: none;
-	padding: 20px;
+	/* padding: 20px; */
 }
 
 .logo a{
@@ -34,6 +45,9 @@ nav a {
     padding: 15px;
     display: block;
 	color: var(--light);
+	font-family: 'Press Start 2P', cursive;
+	font-size: 1.5vh;
+	
 }
 
 nav li.active {
@@ -50,20 +64,33 @@ nav li:hover{
 .play{
     margin: 10px;
     padding: 10px 35px 10px 35px;
-    color: aliceblue;
+    color: var(--darker);
     background-color: var(--dark);
     border: solid var(--dark);
     border-radius: 10px;
+	font-family: 'Press Start 2P', cursive;
+
+}
+
+.play:hover{
+	background-color: var(--darker);
+	color: var(--font);
+	border: solid var(--darker);
 }
 
 .login{
     padding: 10px 35px 10px 35px;
     color: aliceblue;
-    background-color: var(--dark);
-    border: solid var(--dark);
+    background-color: var(--default);
+    border: solid var(--default);
     border-radius: 10px;
+	font-family: 'Press Start 2P', cursive;
 }
-
+.login:hover{
+	background-color: var(--secondary);
+	color: var(--font);
+	border: solid var(--secondary);
+}
 
 header .nav-btn {
 	padding: 5px;

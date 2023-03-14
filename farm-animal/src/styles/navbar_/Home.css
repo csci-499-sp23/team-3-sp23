@@ -21,6 +21,7 @@
     box-shadow: 0 0 25px rgb(255, 250, 180);
     color: white;
     cursor: pointer;
+    font-family: 'Press Start 2P';
 }
 
 .wel-button:hover{
