@@ -1,0 +1,24 @@
+.forgot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forgot-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--secondary);
+  margin: 5rem 8rem 5rem 8rem;
+  padding: 3%;
+  box-shadow: 0 0 25px var(--primary);
+}
+
+.forgot-input {
+  margin: 0.5rem 0;
+  padding: 1rem 15vh 1rem 1rem;
+  border: none;
+  color: #77402f;
+  border-radius: 20px;
+}
