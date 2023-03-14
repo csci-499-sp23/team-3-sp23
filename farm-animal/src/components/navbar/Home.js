@@ -5,6 +5,9 @@ import "../../styles/navbar_/Home.css"
 import { Link } from "react-router-dom"
 
 const Home = () => {
+  const authToken = sessionStorage.getItem('Token')
+  if(authToken)
+    <Link to = "../gameplay/Welcome"/>
   return (
     <div className='home-container'>
       <HomeBg />

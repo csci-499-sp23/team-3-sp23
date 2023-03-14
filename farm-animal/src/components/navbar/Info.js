@@ -20,20 +20,13 @@ const Info = () => {
         <div className='info-how-to-play'> {/*HTW = how to play */}
           <div className='info-GDS-colomn'>
             <div className='info-GDS-card'>
-              <h1 className='info-GDS-header'>How to Play</h1>
-              
+              <h1 className='info-GDS-header'>How to Play</h1>  
               <b>Click</b> on your desired square to move. Each square moved will account for one turn spent.
-
               <br></br> <br></br>
-
-              <b>Interact</b> with hostile enemies and chest by approachinh the object and clciking them.
-              
+              <b>Interact</b> with hostile enemies and chest by approachinh the object and clciking them.  
             </div>
-
           </div>
-  
         </div>
-
         <div className='info-about-mafia'> {/*AM = about mafia */}
           <div className='info-GDS-colomn'>
             <div className='info-GDS-card'>
