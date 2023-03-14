@@ -1,6 +1,13 @@
+.lead-page{
+  background-color: var(--light);
+  height: 100%;
+  padding: 5%;
+}
+
 .board {
   text-align: center;
   margin: 2% 5% 5% 5%;
+  
 }
 
 .leaderboard {

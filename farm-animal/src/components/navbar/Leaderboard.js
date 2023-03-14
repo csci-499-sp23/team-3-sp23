@@ -12,6 +12,7 @@ export default function Board() {
   }
 
   return (
+    <div className='lead-page'>
     <div className="board">
       <h1 className="leaderboard">Leaderboard</h1>
       <div className="duration">
@@ -22,6 +23,7 @@ export default function Board() {
       <div className='board-container'>
         <Profiles Leaderboard={between(scores, period)}></Profiles>
       </div>
+    </div>
     </div>
   )
 }
