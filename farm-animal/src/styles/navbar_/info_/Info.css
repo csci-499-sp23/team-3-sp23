@@ -1,57 +1,46 @@
-*, *::before, *::after{
-    box-sizing: inherit;
-}
-
-h1{
+.info-header{
     text-align: center;
+    padding: 2%;
 }
 
-h2 {
-    text-align: center;
-}
-
-p {
-    text-align: justify;
-    font-size: x-large;
-}
 
 .about-section{
-    padding: 50px;
+    padding: 0 3% 5% 3%;
     text-align: center;
     background-color: var(--primary);
-    color:black;
+    color: white;
 }
 
 .info-column{
     float: left;
-    /* width: 100%; */
-    margin-bottom: 2%;
-    margin-top: 2%;
+    width: 33.3%;
+    margin-bottom: 16px;
     padding: 0 8px;
 }
 
 .info-card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 2%;
-    background-color: #fec89a;;
+    background-color: var(--secondary);
+}
+
+.info-container {
+    padding: 0 16px;
+    word-wrap: break-word;
+    padding: 5% 2% 5% 2%;
 }
 
 .info-container::after, .row::after{
     content: "";
     clear: both;
-    /* display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column; */
-}
-
-.info-container{
-    word-wrap: break-word;
 }
 
 .entire-page{
-    background-color: #fff1f0;
+    background-color: var(--light);
     height: 100vh;
-    padding: 5%;
+    padding: 2%;
 }
 
 .info-about{
@@ -61,21 +50,15 @@ p {
 
 
 .info-row{
-    display: flex;
-    /* align-items: center; */
-    align-content: space-evenly;
+    display: flow-root;
+    /* align-content: space-evenly;
     text-align: center;
-    justify-content: center;
-}
-
-.meet-the-team{
-    padding-top: 2%;
-    padding-bottom: 2%;
+    justify-content: center; */
 }
 
 .card-title{
-    color: grey;
-    text-align: center;
+    color: var(--pale);
+    font-weight: 500;
 }
 
 .card-body{
@@ -85,12 +68,6 @@ p {
 .card-email{
     text-align: left;
 }
-@media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
 
 .info-game-detail-section{
     display:flex;
@@ -116,6 +93,12 @@ p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 2%;
     background-color: #fec89a;
-
     text-align: justify;
+}
+
+@media screen and (max-width: 650px) {
+    .info-column {
+        width: 100%;
+        display: block;
+    }
 }
