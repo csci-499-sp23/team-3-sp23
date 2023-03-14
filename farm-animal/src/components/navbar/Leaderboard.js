@@ -1,6 +1,6 @@
 // import Board from '../leaderboard/Leaderboard'
 import { scores } from './database';
-import Profiles from './profile';
+import Profiles from './Profile';
 import React, { useState } from 'react'
 import '../../styles/navbar_/Leaderboard.css'
 
@@ -13,13 +13,15 @@ export default function Board() {
 
   return (
     <div className="board">
-      <h1 className="Leaderboard">Leaderboard</h1>
+      <h1 className="leaderboard">Leaderboard</h1>
       <div className="duration">
-        <button onClick={handleClick} data-id='7'>This Week</button>
-        <button onClick={handleClick} data-id='30'>This Month</button>
-        <button onClick={handleClick} data-id='365'>This Year</button>
+        <button className='board-button' onClick={handleClick} data-id='7'>This Week</button>
+        <button className='board-button' onClick={handleClick} data-id='30'>This Month</button>
+        <button className='board-button' onClick={handleClick} data-id='365'>This Year</button>
       </div>
-      <Profiles Leaderboard={between(scores, period)}></Profiles>
+      <div className='board-container'>
+        <Profiles Leaderboard={between(scores, period)}></Profiles>
+      </div>
     </div>
   )
 }
