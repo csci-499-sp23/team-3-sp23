@@ -1,0 +1,74 @@
+.info-header{
+    text-align: center;
+    padding: 1%;
+    color: white;
+}
+
+.info-header2{
+    text-align: center;
+    padding: 1%;
+    color: var(--darker);
+}
+
+.info-text {
+    text-align: justify;
+    font-size: large;
+    color: white;
+}
+
+.about-section{
+    padding: 2%;
+    text-align: center;
+    background-color: var(--primary);
+    color:black;
+    border-radius: 25px;
+}
+
+.entire-page{
+    background-color: #fff1f0;
+    height: 100%;
+    padding: 5%;
+}
+
+.info-about{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+.info-game-detail-section{
+    display:flex;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.info-how-to-play{
+    width: 40%;
+    float: left;
+}
+
+.info-about-mafia{
+    width: 60%;
+    float: right;
+}
+
+.info-GDS-column{
+    padding: 2%;
+    font-size: large;
+}
+
+.info-GDS-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2%;
+    background-color: #fec89a;
+    padding: 2%;
+    border-radius: 25px;
+    text-align: justify;
+}
+
+.info-GDS-header{
+    text-align: center;
+    padding: 2%;
+    font-size: 3vh;
+    color: white;
+}
