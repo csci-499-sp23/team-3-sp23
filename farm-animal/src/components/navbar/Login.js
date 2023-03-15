@@ -26,7 +26,7 @@ const Login = () => {
         <label htmlFor="password" className='login-label'> Password:</label>
         <input className="login-input" type="password" placeholder='Players Password' id="password" name="passowrd" value={password} onChange={(e) => setPassword(e.target.value)} />
         <div >
-          <Link to="/ForgotU" className='login-link'>Forget User</Link>
+
           <Link to="/ForgotP" className='login-link'>Forget Password</Link>
         </div>
         <button type="submit" className="login-button">Login Now!</button>
