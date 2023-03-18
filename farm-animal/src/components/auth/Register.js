@@ -11,10 +11,7 @@ const Register = () => {
   const [pass, setPass] = useState('');
   const [username, setUsername] = useState('');
   const ref = collection(firestore, "test");
-  // const validateEmail = (email) => {
-  //   const res = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  //   return res.test(String(email).toLowerCase());
-  // }
+
   const handleSubmit = async (e) => {
     const auth = getAuth();
     e.preventDefault();
@@ -37,7 +34,7 @@ const Register = () => {
       console.log(e);
     }
   }
-  //style={{ backgroundImage:`url(${background})` }
+
   return (
     <div className="register-container">
       <form className="register-form" onSubmit={handleSubmit}>

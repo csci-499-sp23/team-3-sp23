@@ -3,38 +3,42 @@ import Navbar from "./navbar/Navbar";
 import Info from "./navbar/info/Info";
 import Contact from "./navbar/Contact";
 import Board from "./navbar/Leaderboard";
-import Login from "./navbar/Login";
-import Register from "./navbar/Register";
+import Login from "./auth/Login";
+import Register from "./auth/Register";
 import ForgotP from "./navbar/forgot";
 import { Route, Routes } from "react-router-dom";
 import Home from "./navbar/Home";
 import Welcome from "./gameplay/Welcome";
+import { AuthProvider } from "./context/AuthContext";
+import SuccessReg from "./auth/SuccessReg";
+import UserProfile from "./auth/UserProfile";
+import PrivateRoute from "./auth/PrivateRoute";
+import ForgotPassword from "./auth/ForgotPassword"
 
-//import firebase.js
-// import firebase from "./firebase"
 
 function App() {
-  //for testing firebase 
-  // const firebaseApp= firebase.apps[0];
   return (
     <div className="App">
-      {/* {
-        JSON.stringify(firebaseApp)
-      } */}
       <Navbar />
       <div className="app-container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="/info" element={<Info />} />
-          <Route path="/leaderboard" element={<Board />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/welcome" element={<Welcome />} />
-          {/* create a route tag in order to use it in the "to" in Link*/}
-          <Route path="/ForgotP" element={<ForgotP />} />
-        </Routes>
+        <AuthProvider>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/info" element={<Info />} />
+            <Route path="/leaderboard" element={<Board />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/welcome" element={<Welcome />} />
+            <Route path="/ForgotP" element={<ForgotP />} />
+            <Route path="/success-register" element={<SuccessReg />} />
+            <Route path="/user-profile" element={
+              <PrivateRoute>
+                <UserProfile />
+              </PrivateRoute>} />
+              <Route path="/forgot-password" element={<ForgotPassword />} />
+          </Routes>
+        </AuthProvider>
       </div>
     </div>
   );

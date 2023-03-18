@@ -5,14 +5,14 @@ import "../../styles/navbar_/Home.css"
 import { Link } from "react-router-dom"
 
 const Home = () => {
-  const authToken = sessionStorage.getItem('Token')
-  if(authToken)
-    <Link to = "../gameplay/Welcome"/>
+  // const authToken = sessionStorage.getItem('Token')
+  // if(authToken)
+  //   <Link to = "../gameplay/Welcome"/>
   return (
     <div className='home-container'>
       <HomeBg />
       <div className='play-btn'>
-        <Link to = "/welcome" className='welcome'>
+        <Link to = "/user-profile" className='welcome'>
           <button type="button" className='wel-button'>
             Play
           </button> 
