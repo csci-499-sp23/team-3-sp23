@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import "../../styles/navbar_/Register.css";
 import { Link, useNavigate } from "react-router-dom"
 import { firestore } from "../firebase"
-import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth'
+// import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth'
 import { addDoc, collection } from "@firebase/firestore"
 import { Alert } from 'react-bootstrap';
 import { useAuth } from '../context/AuthContext';

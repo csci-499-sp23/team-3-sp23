@@ -23,6 +23,7 @@ export default function Navbar() {
 				<CustomLink to ="/Leaderboard">Leaderboard</CustomLink>
 				<CustomLink to ="/Contact">Contact Us</CustomLink>
 				<CustomLink to ="/Login" className="mobile-only">Login</CustomLink>
+				<CustomLink to ="/user-profile">Profile</CustomLink>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

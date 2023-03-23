@@ -29,12 +29,15 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/welcome" element={<Welcome />} />
             <Route path="/ForgotP" element={<ForgotP />} />
             <Route path="/success-register" element={<SuccessReg />} />
             <Route path="/user-profile" element={
               <PrivateRoute>
                 <UserProfile />
+              </PrivateRoute>} />
+            <Route path="/welcome" element={
+              <PrivateRoute>
+                <Welcome />
               </PrivateRoute>} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
           </Routes>
