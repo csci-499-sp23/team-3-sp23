@@ -1,12 +1,11 @@
 import React from 'react'
-import logo from '../../assets/HomeImage.gif'
 import '../../styles/navbar_/HomeBg.css';
 
 const HomeBg = () => {
   const logo = require('../../assets/HomeImage.gif');
   return (
     <div className='home-bg'>
-        <img src={logo} className="home-logo" 
+        <img src={logo} className="home-logo" alt='homelogo'
         style={{
           display: "block",
           marginLeft: "auto",
