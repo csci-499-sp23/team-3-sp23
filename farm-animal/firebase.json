@@ -1,13 +1,29 @@
 {
+  "emulators": {
+    "hosting": {
+      "port": 5004,
+      "host": "0.0.0.0"
+    }
+  },
   "hosting": {
-    "public": "build",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   },
   "database": {
-    "rules": "database.rules.json"
+    "rules": "firestore.rules"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
   }
 }

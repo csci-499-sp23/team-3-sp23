@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "animal-mafia-c004b"
+    "default": "test-animal-mafia"
   },
   "targets": {},
   "etags": {}
