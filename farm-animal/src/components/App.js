@@ -39,7 +39,7 @@ function App() {
               <PrivateRoute>
                 <Welcome />
               </PrivateRoute>} />
-              <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
           </Routes>
         </AuthProvider>
       </div>

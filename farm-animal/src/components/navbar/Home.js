@@ -12,10 +12,10 @@ const Home = () => {
     <div className='home-container'>
       <HomeBg />
       <div className='play-btn'>
-        <Link to = "/user-profile" className='welcome'>
+        <Link to="/welcome" className='welcome'>
           <button type="button" className='wel-button'>
             Play
-          </button> 
+          </button>
         </Link>
       </div>
     </div>
