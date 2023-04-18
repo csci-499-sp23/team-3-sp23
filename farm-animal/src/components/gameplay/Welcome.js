@@ -1,19 +1,31 @@
-import React from 'react'
-import Canvas from './Canvas';
-
-const draw = (context) => {
-  context.fillStyle = "rgb(200, 0, 0)";
-  context.fillRect(10, 10, 50, 50);
-
-  context.fillStyle = "rgba(0, 0, 200, 0.5)";
-  context.fillRect(30, 30, 50, 50);
-};
+import React, { Fragment } from 'react'
+import { Unity, useUnityContext } from "react-unity-webgl";
 
 
 function Welcome() {
+
+  const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
+    loaderUrl: "/Build/farm-animal.loader.js",
+    dataUrl: "/Build/farm-animal.data",
+    frameworkUrl: "/Build/farm-animal.framework.js",
+    codeUrl: "/Build/farm-animal.wasm",
+  });
+
   return (
-    <Canvas draw={draw} height={1040} width={576} />
-  )
+    <Fragment>
+      {!isLoaded && (
+        <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
+      )}
+      <Unity
+        unityProvider={unityProvider}
+        style={{
+          visibility: isLoaded ? "visible" : "hidden",
+          width: "80%",
+          height: "80%"
+        }}
+      />
+    </Fragment>
+  );
 }
 
 export default Welcome
