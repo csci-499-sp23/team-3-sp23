@@ -5,10 +5,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 function Welcome() {
 
   const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
-    loaderUrl: "/build/BuildAM.loader.js",
-    dataUrl: "/build/BuildAM.data",
-    frameworkUrl: "/build/BuildAM.framework.js",
-    codeUrl: "/build/BuildAM.wasm",
+    loaderUrl: "/Build/farm-animal.loader.js",
+    dataUrl: "/Build/farm-animal.data",
+    frameworkUrl: "/Build/farm-animal.framework.js",
+    codeUrl: "/Build/farm-animal.wasm",
   });
 
   return (
@@ -20,7 +20,8 @@ function Welcome() {
         unityProvider={unityProvider}
         style={{
           visibility: isLoaded ? "visible" : "hidden",
-          width: "100%"
+          width: "80%",
+          height: "80%"
         }}
       />
     </Fragment>

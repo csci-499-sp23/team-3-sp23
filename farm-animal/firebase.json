@@ -15,12 +15,6 @@
   },
   "headers": [
     {
-      "key": "Content-Encoding",
-      "value": "br"
-    }
-  ],
-  "headers": [
-    {
       "source": "*/.@(js|css|html|svg)",
       "headers": [
         {
