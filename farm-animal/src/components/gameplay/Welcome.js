@@ -1,13 +1,14 @@
-import React, { Fragment } from "react"
+import React, { Fragment } from 'react'
 import { Unity, useUnityContext } from "react-unity-webgl";
 
 
 function Welcome() {
+
   const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
-    loaderUrl: "build/myunityapp.loader.js",
-    dataUrl: "build/myunityapp.data",
-    frameworkUrl: "build/myunityapp.framework.js",
-    codeUrl: "build/myunityapp.wasm",
+    loaderUrl: "/build/BuildAM.loader.js",
+    dataUrl: "/build/BuildAM.data",
+    frameworkUrl: "/build/BuildAM.framework.js",
+    codeUrl: "/build/BuildAM.wasm",
   });
 
   return (
@@ -17,7 +18,10 @@ function Welcome() {
       )}
       <Unity
         unityProvider={unityProvider}
-        style={{ visibility: isLoaded ? "visible" : "hidden" }}
+        style={{
+          visibility: isLoaded ? "visible" : "hidden",
+          width: "100%"
+        }}
       />
     </Fragment>
   );

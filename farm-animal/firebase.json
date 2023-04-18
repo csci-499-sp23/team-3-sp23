@@ -13,6 +13,23 @@
       "**/node_modules/**"
     ]
   },
+  "headers": [
+    {
+      "key": "Content-Encoding",
+      "value": "br"
+    }
+  ],
+  "headers": [
+    {
+      "source": "*/.@(js|css|html|svg)",
+      "headers": [
+        {
+          "key": "Content-Encoding",
+          "value": "br"
+        }
+      ]
+    }
+  ],
   "database": {
     "rules": "firestore.rules"
   },
