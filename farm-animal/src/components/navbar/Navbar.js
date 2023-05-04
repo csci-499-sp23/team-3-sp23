@@ -1,29 +1,32 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../../styles/navbar_/Navbar.css";
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import ChickenLogo from "../../assets/chickenv2.svg"
 
 export default function Navbar() {
-  //it will refer to nav tag
+
+	const [log, setLog] = useState(false);
+
+	//it will refer to nav tag
 	const navRef = useRef();
 
-  //take the current element, each time the function is called we will add or remove the classlist from navtag
+	//take the current element, each time the function is called we will add or remove the classlist from navtag
 	const showNavbar = () => {
 		navRef.current.classList.toggle("responsive_nav");
 	};
 
 	return (
-		<header className="nav-container">
-			<div className = "logo">
-			<Link to="/"><img className="chicken-logo" src={ChickenLogo} alt="ChickenLogo" /></Link>
+		<header className="nav-container" style={{ width: "100%" }}>
+			<div className="logo">
+				<Link to="/"><img className="chicken-logo" src={ChickenLogo} alt="ChickenLogo" /></Link>
 			</div>
 			<nav ref={navRef}>
-				<CustomLink to ="/Info">Game Info</CustomLink>
-				<CustomLink to ="/Leaderboard">Leaderboard</CustomLink>
-				<CustomLink to ="/Contact">Contact Us</CustomLink>
-				<CustomLink to ="/Login" className="mobile-only">Login</CustomLink>
-				<CustomLink to ="/user-profile">Profile</CustomLink>
+				<CustomLink to="/Info">Game Info</CustomLink>
+				<CustomLink to="/Leaderboard">Leaderboard</CustomLink>
+				<CustomLink to="/Contact">Contact Us</CustomLink>
+				<CustomLink to="/Login" className="mobile-only">Login</CustomLink>
+				<CustomLink to="/user-profile">Profile</CustomLink>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
@@ -33,25 +36,27 @@ export default function Navbar() {
 			<button className="nav-btn" onClick={showNavbar}>
 				<FaBars />
 			</button>
-            <div className="lft-btn">
-                <Link to ="/Login" className="login">Login</Link>
-                <Link to ="/Register" className="play">Play</Link>
-            </div>
-            
+
+
+
+			<div className="lft-btn">
+				<Link to="/Login" className="login" onClick={() => setLog(!(log.booleanV))}>{log ? "Logout" : "Login"}</Link>
+			</div>
+
 		</header>
 	);
-	
-	
+
+
 	function CustomLink({ to, children, ...props }) {
 		const resolvedPath = useResolvedPath(to)
 		//checks if the path is the exact same. Once it is it would be set to isActive
 		const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 		return (
-		  <li className={isActive ? "active" : ""} onClick={showNavbar}>
-			<Link to={to} {...props}>
-			  {children}
-			</Link>
-		  </li>
+			<li className={isActive ? "active" : ""} onClick={showNavbar}>
+				<Link to={to} {...props}>
+					{children}
+				</Link>
+			</li>
 		)
 	}
 }
