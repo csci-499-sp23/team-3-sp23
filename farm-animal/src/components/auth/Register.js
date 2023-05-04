@@ -21,9 +21,9 @@ const Register = () => {
   const [loading, setLoading] = useState(false)
 
   const ref = collection(firestore, "test");
-  const navigate  = useNavigate();
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
-    
+
     // const auth = getAuth();
 
     e.preventDefault();
@@ -33,7 +33,7 @@ const Register = () => {
       user: username
     }
 
-    if(passwordRef.current.value !== passwordConfirmRef.current.value){
+    if (passwordRef.current.value !== passwordConfirmRef.current.value) {
       return setError('Passwords do not match')
     }
 
@@ -42,7 +42,7 @@ const Register = () => {
       addDoc(ref, data);
       setError('')
       setLoading(true)
-      
+
       // ---------------------------------
       // createUserWithEmailAndPassword(auth, emailRef.current.value, passwordRef.current.value)
       //   .then((userCredential) => {
@@ -55,7 +55,8 @@ const Register = () => {
 
       await signup(emailRef.current.value, passwordRef.current.value)
       // sendEmailVerification();
-      navigate ('/success-register')
+      alert("Successfully registered");
+      navigate('/')
 
     }
     catch (e) {
