@@ -18,6 +18,11 @@ export default function Navbar() {
 		navRef.current.classList.toggle("responsive_nav");
 	};
 
+	function clicked() {
+		console.log("clicked");
+		logout();
+	}
+
 	return (
 		<header className="nav-container" style={{ width: "100%" }}>
 			<div className="logo">
@@ -43,7 +48,7 @@ export default function Navbar() {
 
 			<div className="lft-btn">
 				{isLoggedIn ? (
-					<Link to="/Login" className="login" onClick={logout}>Logout</Link>
+					<Link to="/Login" className="login" onClick={clicked()}>Logout</Link>
 				) :
 					<Link to="/Login" className="login">Login</Link>
 				}
