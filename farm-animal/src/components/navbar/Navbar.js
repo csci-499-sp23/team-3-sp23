@@ -1,15 +1,17 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useContext } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../../styles/navbar_/Navbar.css";
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import ChickenLogo from "../../assets/chickenv2.svg"
+import { useAuth } from "../context/AuthContext"
 
 export default function Navbar() {
 
-	const [log, setLog] = useState(false);
 
+	const { isLoggedIn, logout } = useAuth()
 	//it will refer to nav tag
 	const navRef = useRef();
+
 
 	//take the current element, each time the function is called we will add or remove the classlist from navtag
 	const showNavbar = () => {
@@ -40,7 +42,12 @@ export default function Navbar() {
 
 
 			<div className="lft-btn">
-				<Link to="/Login" className="login" onClick={() => setLog(!(log.booleanV))}>{log ? "Logout" : "Login"}</Link>
+				{isLoggedIn ? (
+					<Link to="/Login" className="login" onClick={logout}>Logout</Link>
+				) :
+					<Link to="/Login" className="login">Login</Link>
+				}
+
 			</div>
 
 		</header>
