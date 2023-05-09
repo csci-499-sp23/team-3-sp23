@@ -5,10 +5,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 function Welcome() {
 
   const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
-    loaderUrl: "/Build/Build25.loader.js",
-    dataUrl: "/Build/Build25.data",
-    frameworkUrl: "/Build/Build25.framework.js",
-    codeUrl: "/Build/Build25.wasm",
+    loaderUrl: "/Build/Build.loader.js",
+    dataUrl: "/build/Build.data",
+    frameworkUrl: "/Build/Build.framework.js",
+    codeUrl: "/Build/Build.wasm",
   });
 
   const pStyle = {

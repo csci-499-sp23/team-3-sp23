@@ -40,7 +40,7 @@ export default function Navbar() {
 
 
 			<div className="lft-btn">
-				<Link to="/Login" className="login" onClick={() => setLog(!(log.booleanV))}>{log ? "Logout" : "Login"}</Link>
+				<Link to="/Login" className="login" onClick={() => setLog(!log)}>{log ? "Logout" : "Login"}</Link>
 			</div>
 
 		</header>
