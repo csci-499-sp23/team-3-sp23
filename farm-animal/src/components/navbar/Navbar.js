@@ -8,7 +8,7 @@ import { useAuth } from "../context/AuthContext"
 export default function Navbar() {
 
 
-	const { isLoggedIn, logout } = useAuth()
+	const { isLoggedIn, logout } = useAuth();
 	//it will refer to nav tag
 	const navRef = useRef();
 
@@ -48,7 +48,7 @@ export default function Navbar() {
 
 			<div className="lft-btn">
 				{isLoggedIn ? (
-					<Link to="/Login" className="login" onClick={clicked()}>Logout</Link>
+					<Link to="/Login" className="login" onClick={logout}>Logout</Link>
 				) :
 					<Link to="/Login" className="login">Login</Link>
 				}
