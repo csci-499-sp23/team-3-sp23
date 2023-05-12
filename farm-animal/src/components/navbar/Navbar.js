@@ -51,9 +51,7 @@ export default function Navbar() {
 					<Link to="/Login" className="login" onClick={logout}>Logout</Link>
 				) :
 					<Link to="/Login" className="login">Login</Link>
-				}
-
-			</div>
+				}			</div>
 
 		</header>
 	);
