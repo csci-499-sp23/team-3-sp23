@@ -52,7 +52,6 @@ export default function Navbar() {
 				) :
 					<Link to="/Login" className="login">Login</Link>
 				}
-
 			</div>
 
 		</header>
