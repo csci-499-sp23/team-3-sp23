@@ -6,7 +6,7 @@ function Welcome() {
 
   const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
     loaderUrl: "/Build/Build.loader.js",
-    dataUrl: "/build/Build.data",
+    dataUrl: "/Build/Build.data",
     frameworkUrl: "/Build/Build.framework.js",
     codeUrl: "/Build/Build.wasm",
   });
@@ -26,7 +26,7 @@ function Welcome() {
   }
 
   return (
-    <Fragment >
+    <Fragment>
       {!isLoaded && (
         <p style={pStyle}>Loading Application... {Math.round(loadingProgression * 100)}%</p>
       )}

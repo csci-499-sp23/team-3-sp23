@@ -13,6 +13,7 @@ const app = firebase.initializeApp({
 })
 
 
+
 //export a var for authentication -> give us our authentication instance
 export const auth = app.auth()
 export const firestore = getFirestore(app);
