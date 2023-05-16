@@ -60,7 +60,12 @@ const Register = () => {
 
     }
     catch (e) {
-      setError('Failed to create an account, user already exists')
+      if (passwordRef.current.value.length < 7) {
+        setError("Password must be more than 6 characters")
+      }
+      else {
+        setError('Failed to create an account, user already exists')
+      }
     }
     setLoading(false)
   }
